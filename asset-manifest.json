@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/InfluenceUnmasked/static/css/main.073c9b0a.css",
+    "main.js": "/InfluenceUnmasked/static/js/main.c3f19842.js",
+    "static/js/787.4b6e3c3c.chunk.js": "/InfluenceUnmasked/static/js/787.4b6e3c3c.chunk.js",
+    "static/media/logo.svg": "/InfluenceUnmasked/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/InfluenceUnmasked/index.html",
+    "main.073c9b0a.css.map": "/InfluenceUnmasked/static/css/main.073c9b0a.css.map",
+    "main.c3f19842.js.map": "/InfluenceUnmasked/static/js/main.c3f19842.js.map",
+    "787.4b6e3c3c.chunk.js.map": "/InfluenceUnmasked/static/js/787.4b6e3c3c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.c3f19842.js"
+  ]
+}
