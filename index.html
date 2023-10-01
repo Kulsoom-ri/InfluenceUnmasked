@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Influence Unmasked</title>
+<script src="js.js"></script>
+<link rel="stylesheet" href="css.css">
+</head>
+
+<body  onload="infoDisplay()">
+		 <button id="menu">STAT DISPLAY <!--button to show risk and popularity-->
+        <div id="var1" class="statshow"></div>
+        <div id="var2" class="statshow"></div>
+    </button>
+	
+	   <h1 class="h1"> Influence Unmasked </h1>
+	<h2 class "h2">Combating Misinformation in the Digital World</h2><!--title and description of game-->
+	    <div id="text"> In the early months of 2020, as the digital world pulsed with the currents of change and upheaval, you found yourself on the cusp of an extraordinary journey. You were no longer just another denizen of the internet; you aspired to become an influencer, someone whose words held the power to sway minds, spark movements, and capture the hearts of an ever-connected global audience. With each decision you made, the fate of your burgeoning influence hung in the balance, and the consequences of your choices would echo through the interconnected corridors of the digital age. Popularity and the risk of being canceled were the metrics that measured your path, and the perilous dance between truth and fiction would define your journey as an influencer in the chaotic year of 2020.  </div>
+	
+	<div id="button-container">   <!--buttons-->
+        <button class="button-choice" id="nextButton" onclick="move(1);infoDisplay();statchecker()"> NEXT </button>
+		
+		 <button class="button-choice" id="falseButton1" onclick="move(2);infoDisplay();statchecker()"> CHOICE ONE </button>
+		
+		<button class="button-choice" id="falseButton2" onclick="move(3);infoDisplay();statchecker()"> CHOICE TWO </button>
+		
+	</div>
+</body>	
+</html>
