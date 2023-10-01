@@ -1,5 +1,4 @@
-@charset "utf-8";
-/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
 
   #falseButton1 {
     display: none;
@@ -8,3 +7,369 @@
   #falseButton2 {
     display: none;
   }
+
+  #startButton {
+    display: none;
+  }
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.context {
+  text-align: center;
+}
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index:1;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.header{
+  position: absolute;
+  width: 100vw;
+  display:flex; flex-flow:row wrap;
+}
+
+.header h1{
+	font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 3vw;
+	text-align: left;
+    letter-spacing: 6px;
+	width: 49%;
+	margin-left: 1%;
+	align-self: center;
+}
+
+.header h2{
+    color: #fff;
+    font-size: 1vw;
+	text-align: right;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 6px;
+	font-weight: 200;
+	width: 49%;
+	align-self: center;
+	margin-right: 1%;
+}
+
+.text{
+	padding: 20px;
+    color: #fff;
+    font-size: 80%;
+	font-family: 'Montserrat';
+	font-weight: 100;
+	line-height: 1.5em;
+}
+
+.progress_bar
+{
+	width: 50%;
+	position: absolute;
+	top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+	display: flex;
+  justify-content: space-between;
+}
+
+progress[value] {
+	-webkit-appearance: none;
+   appearance: none;
+  background-color: #f3f3f3;
+  border: 0;
+  height: 18px;
+  border-radius: 9px;
+}
+.btn{
+	  font-family: 'Montserrat';
+  font-size: 1rem;
+  padding: 0.85em 1.345em;
+  font-weight: bold;
+  border-radius: 0.5em;
+  margin: auto;
+  letter-spacing: 2px;
+  cursor: pointer;
+  max-width: 10rem;
+}
+
+.classy {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.classy:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.classy:active {
+  transform: scale(0.9);
+}
+
+.classy:animated {
+  animation: button-grow 0.5s ease-in-out;
+}
+
+@keyframes button-grow {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.area{
+    background: #000;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #000);  
+    width: 100%;
+    height:100vh;   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+
+/* Bar Graph Horizontal */
+.bar-graph .year {
+  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+  -moz-animation: fade-in-text 2.2s 0.1s forwards;
+  animation: fade-in-text 2.2s 0.1s forwards;
+  opacity: 0;
+}
+
+.bar-graph-horizontal {
+  max-width: 380px;
+}
+
+.bar-graph-horizontal > div {
+  float: left;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+
+.bar-graph-horizontal .bar {
+  border-radius: 3px;
+  height: 55px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 0;
+}
+
+.bar-graph-one .bar::after {
+  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+  -moz-animation: fade-in-text 2.2s 0.1s forwards;
+  animation: fade-in-text 2.2s 0.1s forwards;
+  color: #fff;
+  content: attr(var1);
+  font-weight: 700;
+  position: absolute;
+  right: 16px;
+  top: 17px;
+}
+
+.bar-graph-one .bar-one .bar {
+  background-color: #64b2d1;
+  -webkit-animation: show-bar-one 1.2s 0.1s forwards;
+  -moz-animation: show-bar-one 1.2s 0.1s forwards;
+  animation: show-bar-one 1.2s 0.1s forwards;
+}
+
+.bar-graph-one .bar-two .bar {
+  background-color: #5292ac;
+  -webkit-animation: show-bar-two 1.2s 0.2s forwards;
+  -moz-animation: show-bar-two 1.2s 0.2s forwards;
+  animation: show-bar-two 1.2s 0.2s forwards;
+}
+
+.bar-graph-one .bar-three .bar {
+  background-color: #407286;
+  -webkit-animation: show-bar-three 1.2s 0.3s forwards;
+  -moz-animation: show-bar-three 1.2s 0.3s forwards;
+  animation: show-bar-three 1.2s 0.3s forwards;
+}
+
+.bar-graph-one .bar-four .bar {
+  background-color: #2e515f;
+  -webkit-animation: show-bar-four 1.2s 0.4s forwards;
+  -moz-animation: show-bar-four 1.2s 0.4s forwards;
+  animation: show-bar-four 1.2s 0.4s forwards;
+}
+
+/* Bar Graph Horizontal Animations */
+@-webkit-keyframes show-bar-one {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 69.6%;
+  }
+}
+
+@-webkit-keyframes show-bar-two {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 71%;
+  }
+}
+
+@-webkit-keyframes show-bar-three {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 74.7%;
+  }
+}
+
+@-webkit-keyframes show-bar-four {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 76.8%;
+  }
+}
+
+@-webkit-keyframes fade-in-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

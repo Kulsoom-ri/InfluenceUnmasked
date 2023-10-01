@@ -5,25 +5,51 @@
 <title>Influence Unmasked</title>
 <script src="js.js"></script>
 <link rel="stylesheet" href="css.css">
+<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:100,200:300' rel='stylesheet'>
+	<script src="https://kit.fontawesome.com/e00711ebdc.js" crossorigin="anonymous"></script>
 </head>
 
 <body  onload="infoDisplay()">
-		 <button id="menu">STAT DISPLAY <!--button to show risk and popularity-->
-        <div id="var1" class="statshow"></div>
-        <div id="var2" class="statshow"></div>
-    </button>
 	
-	   <h1 class="h1"> Influence Unmasked </h1>
-	<h2 class "h2">Combating Misinformation in the Digital World</h2><!--title and description of game-->
-	    <div id="text"> In the early months of 2020, as the digital world pulsed with the currents of change and upheaval, you found yourself on the cusp of an extraordinary journey. You were no longer just another denizen of the internet; you aspired to become an influencer, someone whose words held the power to sway minds, spark movements, and capture the hearts of an ever-connected global audience. With each decision you made, the fate of your burgeoning influence hung in the balance, and the consequences of your choices would echo through the interconnected corridors of the digital age. Popularity and the risk of being canceled were the metrics that measured your path, and the perilous dance between truth and fiction would define your journey as an influencer in the chaotic year of 2020.  </div>
+<div class="context">
+	<div class="header"><h1 class="h1"> INFLUENCE UNMASKED </h1>
+	<h2 class="h2">COMBATING MISINFORMATION IN THE DIGITAL WORLD.</h2><!--title and description of game--></div>
+	
+	<div class = "center">
+		
+	    <div class = "text" id="text"> In the early months of 2020, as the digital world pulsed with the currents of change and upheaval, you found yourself on the cusp of an extraordinary journey. You were no longer just another denizen of the internet; you aspired to become an influencer, someone whose words held the power to sway minds, spark movements, and capture the hearts of an ever-connected global audience. With each decision you made, the fate of your burgeoning influence hung in the balance, and the consequences of your choices would echo through the interconnected corridors of the digital age. Popularity and the risk of being canceled were the metrics that measured your path, and the perilous dance between truth and fiction would define your journey as an influencer in the chaotic year of 2020.  </div>
 	
 	<div id="button-container">   <!--buttons-->
-        <button class="button-choice" id="nextButton" onclick="move(1);infoDisplay();statchecker()"> NEXT </button>
+        <button class="button-choice btn classy" id="nextButton" onclick="move(1);infoDisplay();statchecker()"> NEXT </button>
 		
 		 <button class="button-choice" id="falseButton1" onclick="move(2);infoDisplay();statchecker()"> CHOICE ONE </button>
 		
 		<button class="button-choice" id="falseButton2" onclick="move(3);infoDisplay();statchecker()"> CHOICE TWO </button>
 		
+		<button class="button-choice btn classy" id="startButton" onclick="location.href='https://kulsoom-ri.github.io/InfluenceUnmasked/'"> START AGAIN </button>
 	</div>
+		
+	</div>
+	
+	<div class="progress_bar">
+	<p>RISK<progress id="risk_bar" max="100"></progress></p>
+		<p>POPULARITY<progress id="popularity_bar" max="100"></progress></div></p>
+	</div>
+	
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
 </body>	
 </html>
