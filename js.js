@@ -163,9 +163,9 @@ else {
       document.getElementById("nextButton").innerHTML = "NEXT CHAPTER";
       var performance = (good_choice_counter - 2) * 100 / 2;
       if (performance > 75) {
-        document.getElementById('text').innerHTML = endings[chapter][0]; 
-      } else {
         document.getElementById('text').innerHTML = endings[chapter][1]; 
+      } else {
+        document.getElementById('text').innerHTML = endings[chapter][0]; 
       }
       good_choice_counter = 0; //reset counter
       chapter++; //increment chapter
