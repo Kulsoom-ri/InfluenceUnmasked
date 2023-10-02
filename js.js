@@ -161,7 +161,8 @@ else {
     /**text proceed normally */}
     if (chapter_endings.includes(i)) {
       document.getElementById("nextButton").innerHTML = "NEXT CHAPTER";
-      var performance = (good_choice_counter - 2) * 100 / 2;
+      var performance = (good_choice_counter) * 200 / (i - 3 * chapter -2);
+      console.info("Performance", performance);
       if (performance > 75) {
         document.getElementById('text').innerHTML = endings[chapter][1]; 
       } else {
