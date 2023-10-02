@@ -80,6 +80,7 @@ var storyline = [
 
   //EQ Movement Ending
   [""],
+
 ];
 
 var endings = [
