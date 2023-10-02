@@ -12,7 +12,7 @@ var storyline = [
   ["You made your first post. You decide to continue posting.", 
    "Shocking stats show that ViruX has a 99% survival rate! Why all the fuss? #ViruXStats", 
    "While some survival rates are high, it's crucial to consider the broader context of ViruX. Let's rely on verified information and expert guidance to make informed decisions. #ViruXFacts", 1],
-  [{text: " Your popularity increased due to the dramatic claims of your post. Unfortunately you also contributed to fearmongering and misinformation", risk: 5, popularity: 20},
+  [{text: "Your popularity increased due to the dramatic claims of your post. Unfortunately you also contributed to fearmongering and misinformation", risk: 5, popularity: 20},
    {text: "Good job! You prioritized fact-checking and correcting any misinformation or misconceptions in comments, fostering a sense of responsibility.", risk: -5, popularity: 10}, 0, 2],
 				 
   ["Great, let's keep posting for consistent engagement.",  
@@ -75,29 +75,82 @@ var storyline = [
    ["Your followers have pointed out mistakes in your posts. They demand accountability.", "<< No post. Ignore Critique and Continue Posting. >>",
   "I apologize for any inaccuracies in my previous posts. Let's prioritize sharing credible information about the Equality Quest Movement. Together, we can promote genuine progress and understanding.", 1],
   [{text: "You chose to ignore constructive critique and continued posting without reflection, potentially contributing to the spread of misinformation.", risk: 30, popularity: 5},
-  {text: "You acknowledged any mistakes, corrected misinformation, and commited to learning and sharing only accurate information about the Equality Quest Movement.", risk: -30, popularity: 15}, 0, 2],
+  {text: "You acknowledged any mistakes, corrected misinformation, and committed to learning and sharing only accurate information about the Equality Quest Movement.", risk: -30, popularity: 15}, 0, 2],
   
 
   //EQ Movement Ending
   [""],
 
+  //Decision 4: Elections
+  ["Chapter 4: It's Election Time!"],
+  ["Three quarters of the year are done and you are slowly establishing yourself as an influencer by consistently posting. Now all eyes are on the Republic of Harmonia as it holds its presidential elections. The election season is marked by intense political polarization and a flood of misinformation. As an aspiring influencer, you are faced with a crucial role in shaping the narrative surrounding these elections. Your mission: make choices that prioritize responsible information sharing and combat the dangers of spreading election-related misinformation."],
+  
+  ["", "Candidate X is the ONLY choice for Harmonia! Their opponent is a corrupt puppet! #VoteX",
+  "Let's examine the positions and records of all candidates. An informed choice is the best choice. #HarmoniaElections", 1],
+  [{text: "You decided to endorse a political candidate and promote false claims about their opponent, potentially contributing to a divisive and misleading narrative.", risk: 25, popularity: 5},
+  {text: "You chose to share information about political candidates that is accurate, balanced, and free from false claims.", risk: -10, popularity: 15}, 0, 2],
+  
+  ["", "Supporters of Candidate Y are blind to the truth! They are sheep! #HarmoniaDebates",
+  "I appreciate your perspective. Let's discuss our differences respectfully and work towards a better Harmonia together. #HarmoniaUnity", 1],
+  [{text: "You engaged in political debates by attacking individuals with differing political beliefs, further polarizing the discourse.", risk: 30, popularity: 10},
+  {text: "You engaged in respectful and constructive discussions with those who hold differing political views, aiming to foster understanding and unity.", risk: -15, popularity: 15}, 0, 2],
+  
+  ["", "Breaking news: Election fraud in Harmonia! The truth must be revealed! #ElectionIntegrity",
+  "Let's ensure the information we share is accurate. Misinformation undermines our democracy. Let's get the facts straight! #ElectionFacts", 1],
+  [{text: "You decided to share news articles that contain unverified information or conspiracy theories about the elections. Try to not post sensationalist articles!", risk: 30, popularity: 10},
+  {text: "You prioritized fact-checking and correcting any misinformation or misconceptions in posts or comments related to the elections.", risk: -10, popularity: 15}, 0, 2],
+  
+   ["", "This blog post claims voter suppression in Harmonia! Our democracy is at stake! #VoterRights", "Let's make sure every Harmonian has access to accurate voting information. Knowledge is power in our democracy! #VoteHarmonia", 1],
+  [{text: "Oh no! The blog post was proven to be false, you did not do your due diligence of fact checking. Your popularity was harmed.", risk: 20, popularity: -30},
+  {text: "You chose to encourage voter education and provide accurate information on how to participate in the elections responsibly.", risk: -30, popularity: 15}, 0, 2],
+ 
+
+  //Elections Ending
+  [""],
+
+  //Decision 5: Addressing Riots Exacerbated due to Misinformation
+	["Chapter 5: Addressing Riots Exacerbated due to Misinformation"],
+  ["The end of 2020 brought great political upheaval. It's early 2021 now, and the world is still reeling from the shocking events of the Freedom Plaza Unrest. A large gathering at Freedom Plaza turned into a chaotic and violent situation, with widespread confusion and rumors circulating on social media. You're faced with the choice of how to approach this critical event marking your first year as an aspiring influencer."],
+	
+	["", "📚 Fact Check: Unraveling the Truth Behind the Freedom Plaza Riots 🏛️💡 #FactCheck #FreedomRiots",
+  "🚨 BREAKING NEWS: Shocking Evidence Suggests Freedom Plaza Riots Were a Set-Up! 🤯🕵️‍♂️ #ConspiracyExposed", 1],
+  [{text: "Instead of jumping on the conspiracy bandwagon, you decide to take a more responsible approach. You chose to research and verify the information before posting.", risk: -30, popularity: 15},
+  {text: "You decided to post a sensational headline without fact-checking. Not good!", risk: 20, popularity: -10}, 0, 2],
+	
+	["", "🔍 Verified: Capitol Riots Were Not Staged! Let's Stick to the Facts 🧐📰 #FactCheck #TruthMatters",
+  "🤔 The Capitol Riots: Unanswered Questions and Ambiguity 🧩🏛️ #SeekingTruth #CapitolMystery", 1],
+  [{text: "You found credible news sources and statements from authorities confirming that the Freedom Plaza riots were not staged. You decided to share this information", risk: -30, popularity: 15},
+  {text: "While trying to fact-check, you encountered conflicting reports. You continued to fan the rumours without waiting for an accurate report.", risk: 20, popularity: -10}, 0, 2],
+	
+	["", "🗣️ Let's Talk: Why It's Crucial to Question, Investigate, and Verify 🔍🤝 #Discussion #FactCheckMatters",
+  "📣 Reminder: Responsible Content Sharing is a Must! Let's Prioritize Facts and Accuracy 🙌📰 #ResponsibleInfluence #FactFirst", 1],
+  [{text: "Good job! You engaged with your followers in thoughtful discussions about the importance of seeking verified information and the dangers of jumping to conclusions.", risk: -30, popularity: 15},
+  {text: "Good job! You emphasized the importance of responsible content sharing and express your commitment to only sharing verified information.", risk: -20, popularity: 10}, 0, 2],
+	
+	//Riots Ending
+	[""],
+
+  [""],
+
 ];
 
 var endings = [
-  ["You choose to spread misinformation. People reading your posts ignored vital safety measures, leading to a surge in ViruX cases and overwhelming the healthcare system. Hospitals struggled to cope with the influx of patients, and the death toll soared. Your actions eventually caught up. ",
+  ["You choose to spread misinformation. People reading you and other ViruX conspiracy theorists' posts ignored vital safety measures, leading to a surge in ViruX cases and overwhelming the healthcare system. Hospitals struggled to cope with the influx of patients, and the death toll soared. Your actions eventually caught up. ",
    "By consistently sharing accurate information about ViruX, you helped your audience make informed decisions in a difficult time. The curve flattened, and the healthcare system remained manageable."],
   ["You contributed to reducing support for climate action. The world continues to face severe climate-related crises, including extreme weather events, food shortages, and environmental degradation. Thanks to you fewer people want to do anything about them.",
    "By consistently sharing accurate information about climate change, you inspired your followers to take action. You became a respected advocate for climate action, and helped make more ecologically conscious societies."],
-  ["As you spread false narratives and promoted divisive content, the Equality Quest Movement rapidly lost credibility and support. The world remained deeply divided, and progress toward equality stagnated.",
+  ["As you and other radical content-creators spread false narratives and promoted divisive content, the Equality Quest Movement rapidly lost credibility and support. The world remained deeply divided, and progress toward equality stagnated.",
    "By consistently sharing accurate information and fostering constructive dialogue, you contributed to positive social change. Even if you didn't completely agree with the movement, by spreading verified facts and not misinformation on the topic you ensured that activists of the movement were not unfairly targeted."],
   ["Your relentless spread of false claims and divisive content during the Harmonia elections led to widespread mistrust in the electoral process. Accusations of voter fraud and election rigging created chaos, and peaceful transitions of power became nearly impossible. Good job plunging the country into political turmoil and instability.", 
     "By consistently sharing accurate information about the Harmonia elections, you encouraged civic engagement and informed decision-making. Voter turn-out increased amongst your followers contributed to a better election process!"],
-  ["You promoted false narratives and conspiracy theories surrounding the unrest. More riots took place causing extensive damage and loss of life. Public trust in the government and institutions eroded.", 
+  ["As you and other antagonists of the movement promoted false narratives and conspiracy theories surrounding the unrest, more riots took place causing extensive damage and loss of life. Public trust in the government and institutions eroded.", 
     "By consistently sharing accurate information about the unrest, you contributed to a better understanding of the events. You emerged as a responsible voice for unity and reconciliation, helping to heal the nation and rebuild trust in its institutions."],
 ]
 
+FINAL_ENDING = "You have finished the game :) Misinformation poses a significant challenge for our world today. Did you know? In the lead-up to the 2020 U.S. presidential election, Twitter labeled or removed thousands of tweets for election-related misinformation. Facebook removed millions of posts and advertisements for violating its policies related to election misinformation. The WHO called the pandemic an 'infodemic' wherein a vast amount of information and misinformation was collectively shared. By mid-2020, Facebook reported that it had removed more than 7 million posts for sharing false information about COVID-19. This online misinformation had significant real world impacts."
+
 var good_choice_counter = 0;
-var chapter_endings = [10, 21, 32, 40, 48];
+var chapter_endings = [10, 21, 32, 43, 51];
 var chapter = 0;
 
 //Defining risk and popularity metrics
@@ -159,7 +212,12 @@ else {
     document.getElementById("wrapper").style.display = "none";
     document.getElementById("wrapper2").style.display = "none";
     /**text proceed normally */}
-    if (chapter_endings.includes(i)) {
+    if (i == 52) {
+      document.getElementById('text').innerHTML = FINAL_ENDING;
+      document.getElementById('nextButton').style.display = "none"; 
+      document.getElementById('startButton').style.display = "inline"; 
+    }
+    else if (chapter_endings.includes(i)) {
       document.getElementById("nextButton").innerHTML = "NEXT CHAPTER";
       var performance = (good_choice_counter) * 200 / (i - 3 * chapter -2);
       console.info("Performance", performance);
@@ -181,7 +239,7 @@ else {
 //function to check stats for instant death. Need to write correctly
  function statchecker() {
     var statchecker = difVariable.risk;
-    var description = "Your thirst for social-media popularity caused harm to people in the online world. People finally see through you. You are cancelled!";
+    var description = "Your thirst for social-media popularity caused harm to people in the real world. People finally see through you. You are cancelled!";
 	 if (statchecker  > 100) {
         document.getElementById('text').innerHTML = description;
 		document.getElementById('nextButton').style.display = "none"; 
