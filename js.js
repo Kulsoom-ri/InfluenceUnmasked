@@ -119,23 +119,9 @@ function move(choice) {
 	var y = storyline[i][0];
 	var x = storyline[i][3];
 //check for ending 	
-if (chapter_endings.includes(i)) {
-  document.getElementById("wrapper").style.display = "none";
-  document.getElementById("wrapper2").style.display = "none";
-  document.getElementById("nextButton").style.display = "inline";
-  document.getElementById("nextButton").innerHTML = "NEXT CHAPTER";
-  var performance = (good_choice_counter - 2) * 100 / 2;
-  if (performance > 75) {
-    document.getElementById('text').innerHTML = endings[chapter][0]; 
-  } else {
-    document.getElementById('text').innerHTML = endings[chapter][1]; 
-  }
-  good_choice_counter = 0; //reset counter
-  chapter++; //increment chapter
-}
 
   //if x = 1, then display choice description and buttons for choices
-else if (x == 1 & choice == 1) {
+if (x == 1 & choice == 1) {
   document.getElementById("nextButton").style.display = "none";
   document.getElementById("wrapper").style.display = "inline";
   document.getElementById("wrapper2").style.display = "inline";
@@ -172,9 +158,23 @@ else if (x == 2 & choice == 3) {
 else {
     document.getElementById("wrapper").style.display = "none";
     document.getElementById("wrapper2").style.display = "none";
-    document.getElementById("nextButton").innerHTML = "NEXT";
     /**text proceed normally */}
-  document.getElementById('text').innerHTML = y; 
+    if (chapter_endings.includes(i)) {
+      document.getElementById("nextButton").innerHTML = "NEXT CHAPTER";
+      var performance = (good_choice_counter - 2) * 100 / 2;
+      if (performance > 75) {
+        document.getElementById('text').innerHTML = endings[chapter][0]; 
+      } else {
+        document.getElementById('text').innerHTML = endings[chapter][1]; 
+      }
+      good_choice_counter = 0; //reset counter
+      chapter++; //increment chapter
+    }
+    else {
+      document.getElementById("nextButton").innerHTML = "NEXT";
+      document.getElementById('text').innerHTML = y;
+    }
+   
 }
 
 
