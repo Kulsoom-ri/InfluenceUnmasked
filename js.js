@@ -136,7 +136,7 @@ document.getElementById("card_body").innerHTML = storyline[i][1];
   document.getElementById("nextButton").style.display = "inline";
   document.getElementById("nextButton").innerHTML = "NEXT"; 
     y = storyline[i][0].text;
-    difVariable.risk = difVariable.risk + storyline[i][0].risk;
+    difVariable.risk = Math.max(difVariable.risk + storyline[i][0].risk, 0);
     difVariable.popularity = difVariable.popularity + storyline[i][0].popularity;   
     good_choice_counter = good_choice_counter + (storyline[i][0].risk < 0 ? 1 : 0);   
   }
@@ -149,7 +149,7 @@ else if (x == 2 & choice == 3) {
     document.getElementById("nextButton").innerHTML = "NEXT";
     y = storyline[i][1].text;
     /**Displaying text for button 2, displaying text located at storyline[i][2] */
-    difVariable.risk = difVariable.risk + storyline[i][1].risk;
+    difVariable.risk = Math.max(difVariable.risk + storyline[i][1].risk, 0);
     difVariable.popularity = difVariable.popularity + storyline[i][1].popularity; 
     good_choice_counter = good_choice_counter + (storyline[i][1].risk < 0 ? 1 : 0);  
   }
@@ -177,12 +177,11 @@ else {
    
 }
 
-
 //function to check stats for instant death. Need to write correctly
  function statchecker() {
     var statchecker = difVariable.risk;
     var description = "Instant Death for being cancelled";
-	 if (statchecker  > 500) {
+	 if (statchecker  > 100) {
         document.getElementById('text').innerHTML = description;
 		document.getElementById('nextButton').style.display = "none"; 
 		document.getElementById('startButton').style.display = "inline"; 
