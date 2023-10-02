@@ -398,7 +398,6 @@ progress[value] {
 }
 
 .card {
-  width: 400px;
   display: grid;
   flex-direction: column;
   background: #fff;
@@ -407,24 +406,24 @@ progress[value] {
   margin: 1em;
 }
 
-.card__header {
+.card_header {
   text-align: left;
   display: flex;
 }
 
-.card__profile-img {
-  width: 5em;
-  height: 5em;
+.card_profile-img {
+  width: 4em;
+  height: 4em;
   object-fit: cover;
   border-radius: 50%;
 }
 
-.card__meta {
+.card_meta {
   display: flex;
   flex-direction: column;
   margin-top: 0.5em;
   margin-left: 1em;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .card_meta_displayname {
@@ -442,7 +441,7 @@ progress[value] {
   font-size: 0.8em;
 }
 
-.card__menu {
+.card_menu {
   color: #aaa;
   font-size: 1.5em;
   align-self: center;
@@ -450,13 +449,25 @@ progress[value] {
   margin-right: 0.25em;
 }
 
-.card__body {
-  font-size: 1em;
-  margin-top: 0.5em;
+.card_body {
+  text-align: left;
+  font-size: 0.8em;
+  margin-top: 1em;
   padding-bottom: 1em;
+  cursor: pointer;
 }
 
-.card__footer {
+.card_body:hover {
+  text-align: left;
+  font-size: 0.8em;
+  margin-top: 1em;
+  padding-bottom: 1em;
+  color:#64b2d1;
+  cursor: pointer;
+  
+}
+
+.card_footer {
   display: flex;
   color: #666;
 }
