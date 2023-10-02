@@ -97,7 +97,7 @@ var endings = [
 ]
 
 var good_choice_counter = 0;
-var chapter_endings = [10, 16, 24, 32, 40, 48];
+var chapter_endings = [10, 21, 32, 40, 48];
 var chapter = 0;
 
 //Defining risk and popularity metrics
