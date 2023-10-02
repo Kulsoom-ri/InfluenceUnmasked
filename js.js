@@ -180,7 +180,7 @@ else {
 //function to check stats for instant death. Need to write correctly
  function statchecker() {
     var statchecker = difVariable.risk;
-    var description = "Instant Death for being cancelled";
+    var description = "Your thirst for social-media popularity caused harm to people in the online world. People finally see through you. You are cancelled!";
 	 if (statchecker  > 100) {
         document.getElementById('text').innerHTML = description;
 		document.getElementById('nextButton').style.display = "none"; 
