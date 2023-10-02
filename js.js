@@ -6,9 +6,16 @@ var storyline = [["Chapter 1: Your First Post - A Global Pandemic"],
 				 [{text: "You decided to promote misinformation. Your popularity received an immediate boost due to the sensationalist nature of your post. Unfortunately your risk of being cancelled also increased.", risk: 25, popularity: 10},
 				 {text: "Good job! You chose to base your ViruX-related content on scientifically verified and accurate information. You gained some popularity through responsible information sharing", risk: -10, popularity: 15}, 0, 2],
 				 
-				 ["a"],
-				 ["b"],
-				 ["c"],
+         ["", 
+         "Shocking stats show that ViruX has a 99% survival rate! Why all the fuss? #ViruXStats", 
+         "While some survival rates are high, it's crucial to consider the broader context of ViruX. Let's rely on verified information and expert guidance to make informed decisions. #ViruXFacts", 1],
+				 [{text: "You decided to promote misinformation. Your popularity increased due to the dramatic claims of your post. Unfortunately your risk of being cancelled also increased.", risk: 5, popularity: 20},
+				 {text: "Good job! You chose to base your ViruX-related content on scientifically verified and accurate information. You gained some popularity through responsible information sharing", risk: -5, popularity: 10}, 0, 2],
+         ["", 
+         "Miracle Cure!!! Drinking a gallon of vinegar cures ViruX infections in seconds. Share this widely and save lives! #ViruXMiracleCure", 
+         "Let's ensure our graphics are as reliable as our intentions. Share accurate infographics about ViruX that are backed by science and experts. Together, we can combat misinformation! #ViruXAwareness", 1],
+				 [{text: "You decided to promote misinformation. Your popularity increased due to the dramatic claims of your post. Unfortunately your risk of being cancelled also increased.", risk: 5, popularity: 20},
+				 {text: "Good job! You chose to base your ViruX-related content on scientifically verified and accurate information. You gained some popularity through responsible information sharing", risk: -5, popularity: 10}, 0, 2], 
 				];
 
 //Defining risk and popularity metrics
@@ -34,46 +41,45 @@ function move(choice) {
 	var x = storyline[i][3];
 	
 //if x = 1, then display choice description and buttons for choices
-	if (x == 1 & choice == 1) {
-	  document.getElementById("nextButton").style.display = "none";
-      document.getElementById("falseButton1").style.display = "inline";
-      document.getElementById("falseButton2").style.display = "inline";
-	
-	document.getElementById("falseButton1").innerHTML = storyline[i][1];
-      document.getElementById("falseButton2").innerHTML = storyline[i][2];
-    }
-	
+if (x == 1 & choice == 1) {
+  document.getElementById("nextButton").style.display = "none";
+  document.getElementById("wrapper").style.display = "inline";
+  document.getElementById("wrapper2").style.display = "inline";
+document.getElementById("card_body").innerHTML = storyline[i][1];
+    document.getElementById("card_body2").innerHTML = storyline[i][2];
+  }
+
 //if x = 2, a choice has been made; for first choice do this
-    else if (x == 2 & choice == 2) {
-		 document.getElementById("nextButton").style.display = "inline";
-      document.getElementById("falseButton1").style.display = "none";
-      document.getElementById("falseButton2").style.display = "none";
-		document.getElementById("nextButton").innerHTML = "NEXT"; 
-      y = storyline[i][0].text;
-      difVariable.risk = difVariable.risk + storyline[i][0].risk;
-      difVariable.popularity = difVariable.popularity + storyline[i][0].popularity;      
-    }
+  else if (x == 2 & choice == 2) {
+  document.getElementById("wrapper").style.display = "none";
+  document.getElementById("wrapper2").style.display = "none";
+   document.getElementById("nextButton").style.display = "inline";
+  document.getElementById("nextButton").innerHTML = "NEXT"; 
+    y = storyline[i][0].text;
+    difVariable.risk = difVariable.risk + storyline[i][0].risk;
+    difVariable.popularity = difVariable.popularity + storyline[i][0].popularity;      
+  }
 
 //if x = 2, a choice has been made; for second choice do this
-	else if (x == 2 & choice == 3) {
-		 document.getElementById("nextButton").style.display = "inline";
-      document.getElementById("falseButton1").style.display = "none";
-      document.getElementById("falseButton2").style.display = "none";
-      document.getElementById("nextButton").innerHTML = "NEXT";
-      y = storyline[i][1].text;
-      /**Displaying text for button 2, displaying text located at storyline[i][2] */
-      difVariable.risk = difVariable.risk + storyline[i][1].risk;
-      difVariable.popularity = difVariable.popularity + storyline[i][1].popularity; 
-    }
+else if (x == 2 & choice == 3) {
+  document.getElementById("wrapper").style.display = "none";
+  document.getElementById("wrapper2").style.display = "none";
+   document.getElementById("nextButton").style.display = "inline";
+    document.getElementById("nextButton").innerHTML = "NEXT";
+    y = storyline[i][1].text;
+    /**Displaying text for button 2, displaying text located at storyline[i][2] */
+    difVariable.risk = difVariable.risk + storyline[i][1].risk;
+    difVariable.popularity = difVariable.popularity + storyline[i][1].popularity; 
+  }
 
 //else proceed normally with text
-	else {
-      document.getElementById("falseButton1").style.display = "none";
-      document.getElementById("falseButton2").style.display = "none";
-      document.getElementById("nextButton").innerHTML = "NEXT";
-      /**text proceed normally */}
-    document.getElementById('text').innerHTML = y; 
-  }
+else {
+    document.getElementById("wrapper").style.display = "none";
+    document.getElementById("wrapper2").style.display = "none";
+    document.getElementById("nextButton").innerHTML = "NEXT";
+    /**text proceed normally */}
+  document.getElementById('text').innerHTML = y; 
+}
 
 
 //function to check stats for instant death. Need to write correctly

@@ -21,20 +21,87 @@
 	    <div class = "text" id="text"> In the early months of 2020, as the digital world pulsed with the currents of change and upheaval, you found yourself on the cusp of an extraordinary journey. You were no longer just another denizen of the internet; you aspired to become an influencer, someone whose words held the power to sway minds, spark movements, and capture the hearts of an ever-connected global audience. With each decision you made, the fate of your burgeoning influence hung in the balance, and the consequences of your choices would echo through the interconnected corridors of the digital age. Popularity and the risk of being canceled were the metrics that measured your path, and the perilous dance between truth and fiction would define your journey as an influencer in the chaotic year of 2020.  </div>
 	
 	<div id="button-container">   <!--buttons-->
-        <button class="button-choice btn classy" id="nextButton" onclick="move(1);infoDisplay();statchecker()"> NEXT </button>
+        <button class="btn classy" id="nextButton" onclick="move(1);infoDisplay();statchecker()"> NEXT </button>
+		<div class="wrapper" id="wrapper">
+			<ul class="cards__list">
+			  <li class="card">
+				<div class="card__header">
+				  <img class="card__profile-img" src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3785&q=80" alt="c3po"/>
+				<div class="card__meta">
+				  <div class="card_meta_displayname">
+					GreatestInfluencer
+				  </div>
+				  <div class="card_meta_username">
+					@influencer
+				  </div>
+				  <div class="card_meta_timestamp">
+					Today
+				  </div>
+				</div>
+				<div class="card__menu">
+				  <i class="fas fa-ellipsis-h"></i>
+				</div>
+				</div>
+				<div class="card_body" id="card_body" onclick="move(2);infoDisplay();statchecker()">CHOICE 1
+				</div>
+				<div class="card__footer">
+				  <span class="card_footer_like">
+					<i class="far fa-heart"></i>
+				  </span>
+				  <span class="card_footer_comment">
+					<i class="far fa-comment"></i>
+				  </span>
+				  <span class="card_footer_share">
+					<i class="fas fa-share-alt"></i>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+		  
+		  <div class="wrapper" id="wrapper2">
+			<ul class="cards__list">
+			  <li class="card">
+				<div class="card__header">
+				  <img class="card__profile-img" src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3785&q=80" alt="c3po"/>
+				<div class="card__meta">
+				  <div class="card_meta_displayname">
+					GreatestInfluencer
+				  </div>
+				  <div class="card_meta_username">
+					@influencer
+				  </div>
+				  <div class="card_meta_timestamp">
+					Today
+				  </div>
+				</div>
+				<div class="card__menu">
+				  <i class="fas fa-ellipsis-h"></i>
+				</div>
+				</div>
+				<div class="card_body" id="card_body2" onclick="move(3);infoDisplay();statchecker()">CHOICE 2
+				</div>
+				<div class="card__footer">
+				  <span class="card_footer_like">
+					<i class="far fa-heart"></i>
+				  </span>
+				  <span class="card_footer_comment">
+					<i class="far fa-comment"></i>
+				  </span>
+				  <span class="card_footer_share">
+					<i class="fas fa-share-alt"></i>
+				</div>
+			  </li>
+			</ul>
+		  </div>
 		
-		 <button class="button-choice" id="falseButton1" onclick="move(2);infoDisplay();statchecker()"> CHOICE ONE </button>
-		
-		<button class="button-choice" id="falseButton2" onclick="move(3);infoDisplay();statchecker()"> CHOICE TWO </button>
-		
-		<button class="button-choice btn classy" id="startButton" onclick="location.href='https://kulsoom-ri.github.io/InfluenceUnmasked/'"> START AGAIN </button>
+		<button class="btn classy" id="startButton" onclick="location.href='https://kulsoom-ri.github.io/InfluenceUnmasked/'"> START AGAIN </button>
 	</div>
 		
 	</div>
 	
 	<div class="progress_bar">
-	<p>RISK<progress id="risk_bar" max="100"></progress></p>
-		<p>POPULARITY<progress id="popularity_bar" max="100"></progress></div></p>
+		<p><span class="progress-bar-label">RISK</span><progress id="risk_bar" max="100"></progress></p>
+		<p><span class="progress-bar-label">POPULARITY</span><progress id="popularity_bar" max="100"></progress></div></p>
 	</div>
 	
 <div class="area" >
