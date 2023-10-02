@@ -27,9 +27,59 @@ var storyline = [
 				 
 	//ViruX Ending
 	[""],
-  [" ", "", ""],
-				 
-	//Responding to Climate Change
+
+  //Responding to Climate Change
+  ["Chapter 2: Responding to Climate Change"],
+  ["As summer unfurls its scorching embrace upon the world, the global north, in addition to a pandemic, finds itself in the throes of a climate crisis with record-breaking heat waves gripping nations in a relentless, fiery vice. Against the backdrop of these extreme weather events, you, as an aspiring influencer, must decide how to inform your audience about this issue."],
+  
+  ["", "Did you know that climate change is just a natural cycle? Don't believe the hype! Nature has always had its ups and downs. #ClimateMyth", "Let's separate fact from fiction: Climate change is real, supported by extensive scientific research. Let's work together for a sustainable future. #ClimateScience", 1],
+  [{text: "You decided to share content that questions the validity of climate change, potentially spreading misinformation.", risk: 25, popularity: 10},
+  {text: "Good job! You chose to fact-check information before posting and share only scientifically accurate content about climate change.", risk: -10, popularity: 15}, 0, 2],
+  
+  ["You decide to respond to your followers comments on your recent post.", "No! The end is near! Scientists predict the Earth will become uninhabitable in just 1 year due to climate change. We must panic and take drastic measures NOW! Share this life-saving message with everyone you know! 🌍😱 #ClimateCrisis",
+  "Thank you for sharing your concerns. However, it's essential to rely on accurate information. The latest research shows that climate change requires a balanced, science-based approach. Let's discuss the facts.", 1],
+  [{text: "You engaged in sensationalism, potentially spreading fear and panic.", risk: 20, popularity: 5},
+  {text: "You prioritized fact-checking and provided corrections when necessary, ensuring that your interactions are based on accurate information.", risk: -5, popularity: 10}, 0, 2],
+  
+  ["You're taking the next step in your influencer journey! You decide to collaborate!", "Thrilled to announce my collaboration with ClimateScientist! Together, we're on a mission to spread awareness about the urgent need for climate action and share credible information backed by science. Stay tuned for eye-opening insights and positive change! 🌍🌿 #ClimateAction",
+  "Exciting news! Teaming up with ClimateTruthSeeker, a true climate visionary! Together, we'll expose the so-called 'climate change hoax' and reveal the 'real truth' behind these so-called 'scientists.' Brace yourselves for mind-blowing revelations! 🌍🤯 #ClimateTruth", 1],
+  [{text: "You chose to collaborate with activists known for their commitment to scientific accuracy and responsible climate advocacy.", risk: -10, popularity: 20},
+  {text: "You collaborated with influencers who spread climate change myths or sensationalize the issue.", risk: 30, popularity: 10}, 0, 2],
+  
+  ["A follower points out that some of your previous posts have contained inaccuracies. You have the opportunity to set the record straight.", "<< No post. Ignore Risks and Continue Misinformation. >>",
+  "I apologize for any inaccuracies in my previous posts. Let's set the record straight and prioritize sharing credible information about climate change. Together, we can make a positive impact.", 1],
+  [{text: "You chose to ignore the risks of spreading misinformation and continued posting sensationalized or inaccurate content.", risk: 25, popularity: 5},
+  {text: "You acknowledged mistakes, corrected misinformation, and commit to learning and sharing accurate information about climate change.", risk: -10, popularity: 20}, 0, 2],
+   
+   //Climate Change Ending
+  [""],
+	//Decision 3: A Social Movement
+  ["Chapter 3: A Social Movement"],
+  ["As summer goes on, the world witnesses the birth of a powerful social justice movement known as the Equality Quest Movement. This movement advocates for equal rights, justice, and an end to systemic discrimination. However, amidst the surge of social media activism, misinformation about the movement is rampant. As an aspiring influencer, you are in a unique position to shape the narrative. Your mission: make choices that prioritize responsible information sharing and combat the dangers of spreading misinformation related to the Equality Quest Movement."],
+  
+  ["", "Equality Quest is all about radical ideologies and division! Be wary of their hidden agenda! #EQMisinfo",
+  "Equality Quest stands for justice, equality, and ending systemic discrimination. Let's work together for a more just society! #EqualityQuest", 1],
+  [{text: "You decided to misrepresent the goals and values of the Equality Quest Movement.", risk: 25, popularity: 5},
+  {text: "You chose to accurately represent the goals and values of the Equality Quest Movement.", risk: -10, popularity: 15}, 0, 2],
+  
+  ["", "Breaking news: Equality Quest leaders caught plotting to overthrow the government! Share for awareness! #EQConspiracy",
+  "Let's ensure the information we share is accurate. Misinformation harms the movement's credibility. Let's get the facts straight! #FactsMatter", 1],
+  [{text: "You decided to share click-baity news articles that contain false information about the Equality Quest Movement.", risk: 30, popularity: 10},
+  {text: "You prioritized fact-checking and correcting any misinformation or misconceptions in posts or comments.", risk: -15, popularity: 15}, 0, 2],
+  
+  ["", "This image shows an EQ supporter performing an illegal act. Share to show the reality! #AgainstEQ",
+  "These verified photos show peaceful protests by EQ supporters. Let's lend our support! #EqualityJourneys", 1],
+  [{text: "Oh no, the photo was manipulated. You spread misinformation. Your reputation was harmed.", risk: 30, popularity: 10},
+  {text: "You chose to share verified photos related to the Equality Quest Movement, ensuring their authenticity.", risk: -10, popularity: 15}, 0, 2],
+  
+   ["Your followers have pointed out mistakes in your posts. They demand accountability.", "<< No post. Ignore Critique and Continue Posting. >>",
+  "I apologize for any inaccuracies in my previous posts. Let's prioritize sharing credible information about the Equality Quest Movement. Together, we can promote genuine progress and understanding.", 1],
+  [{text: "You chose to ignore constructive critique and continued posting without reflection, potentially contributing to the spread of misinformation.", risk: 30, popularity: 5},
+  {text: "You acknowledged any mistakes, corrected misinformation, and commited to learning and sharing only accurate information about the Equality Quest Movement.", risk: -30, popularity: 15}, 0, 2],
+  
+
+  //EQ Movement Ending
+  [""],
 ];
 
 var endings = [
